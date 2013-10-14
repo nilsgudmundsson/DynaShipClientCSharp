@@ -1,4 +1,4 @@
 DynaShipClientCSharp
 ====================
-Maj h√§r :)
+Maj h‰r :)
 Sebastian h‰r :)
