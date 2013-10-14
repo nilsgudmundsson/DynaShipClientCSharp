@@ -16,6 +16,7 @@ namespace ConsoleApplication1
 
         public override void handleGETRequest(HttpProcessor p)
         {
+            p.writeSuccess();
             p.outputStream.Write("Nooooo........!");
         }
 
@@ -24,7 +25,8 @@ namespace ConsoleApplication1
             Console.WriteLine("POST request: {0}", p.http_url);
             string data = inputData.ReadToEnd();
 
-            p.outputStream.Write("{x: 5, y: 2}");
+            p.writeSuccess("application/json");
+            p.outputStream.Write("{\"x\": 5, \"y\": 2}");
         }
     }
 }
