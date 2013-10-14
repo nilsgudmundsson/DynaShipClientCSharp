@@ -25,8 +25,10 @@ namespace ConsoleApplication1
             Console.WriteLine("POST request: {0}", p.http_url);
             string data = inputData.ReadToEnd();
 
+            var response = new DynaShipAI("").Process();
+
             p.writeSuccess("application/json");
-            p.outputStream.Write("{\"x\": 5, \"y\": 2}");
+            p.outputStream.Write(String.Format("{{\"x\": {0}, \"y\": {1}}}", response.X, response.Y));
         }
     }
 }

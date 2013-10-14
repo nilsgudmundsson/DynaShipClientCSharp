@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coordinate.cs" />
+    <Compile Include="DynaShipAI.cs" />
     <Compile Include="DynaShipServer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SimpleHttpServer.cs" />
