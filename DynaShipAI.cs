@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using ConsoleApplication1.Models;
 
 namespace ConsoleApplication1
 {
     public class DynaShipAI
     {
-        public DynaShipAI(string board)
+        private readonly DynaShipBoard _board;
+        public DynaShipAI(DynaShipBoard board)
         {
-            
+            _board = board;
         }
 
         public Coordinate Process()
