@@ -19,7 +19,7 @@ namespace ConsoleApplication1.Models
     {
         public int X { get; set; }
         public int Y { get; set; }
-        //public ShotState State { get; set; }
+        public string State { get; set; }
         public int? ShipId { get; set; }
     }
 
