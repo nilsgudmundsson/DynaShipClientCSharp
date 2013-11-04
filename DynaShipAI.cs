@@ -1,4 +1,5 @@
-﻿using ConsoleApplication1.Models;
+﻿using System;
+using ConsoleApplication1.Models;
 
 namespace ConsoleApplication1
 {
@@ -12,10 +13,11 @@ namespace ConsoleApplication1
 
         public Coordinate Process()
         {
+            var rnd = new Random();
             return new Coordinate
                        {
-                           X = 2,
-                           Y = 2
+                           X = rnd.Next(0, _board.Size),
+                           Y = rnd.Next(0, _board.Size)
                        };
         }
     }

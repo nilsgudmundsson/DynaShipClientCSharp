@@ -4,6 +4,7 @@ namespace ConsoleApplication1.Models
 {
     public class DynaShipBoard
     {
+        public int Size { get; set; }
         public List<Shot> Shots { get; set; }
         public List<Boat> Boats { get; set; }
     }
