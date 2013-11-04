@@ -18,8 +18,7 @@ namespace ConsoleApplication1.Models
 
     public class Shot
     {
-        public int X { get; set; }
-        public int Y { get; set; }
+        public Coordinate Coordinates { get; set; }
         public string State { get; set; }
         public int? ShipId { get; set; }
     }
