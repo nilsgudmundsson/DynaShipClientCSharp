@@ -1,4 +1,3 @@
 DynaShipClientCSharp
 ====================
-Maj här :) 
-Sebastian här :)
+Implement your AI in DynaShipAI.cs
