@@ -19,12 +19,14 @@ namespace ConsoleApplication1.Models
     public class Shot
     {
         public Coordinate Coordinates { get; set; }
-        public string State { get; set; }
+        public ShotState State { get; set; }
         public int? ShipId { get; set; }
     }
 
     public enum ShotState
     {
-        Missed = 0
+        Missed = 0,
+        Seaworthy,
+        Capsized
     }
 }
