@@ -6,10 +6,10 @@ namespace ConsoleApplication1.Models
     {
         public int Size { get; set; }
         public List<Shot> Shots { get; set; }
-        public List<Boat> Boats { get; set; }
+        public List<Ship> Ships { get; set; }
     }
 
-    public class Boat
+    public class Ship
     {
         public int Id { get; set; }
         public int Length { get; set; }

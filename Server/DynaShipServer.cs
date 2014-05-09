@@ -20,7 +20,7 @@ namespace ConsoleApplication1
         public override void handleGETRequest(HttpProcessor p)
         {
             p.writeSuccess();
-            p.outputStream.Write("Nooooo........!");
+            p.outputStream.Write("Use HTTP POST instead");
         }
 
         public override void handlePOSTRequest(HttpProcessor p, StreamReader inputData)
